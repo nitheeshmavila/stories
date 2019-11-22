@@ -1,6 +1,7 @@
 import React from "react";
 
-import Header from "./components/header";
+import Header from "./components/header/header";
+import Post from "./components/post/post";
 
 export default class App extends React.Component{
 
@@ -24,8 +25,9 @@ export default class App extends React.Component{
 		return(
 			<div>
 				<Header/>
-				<h1>Hello World</h1>
-				<input type="text" value={this.state.name} onChange={this.changeFn}/>
+				<Post/>
+				<Post/>
+				{/* <input type="text" value={this.state.name} onChange={this.changeFn}/> */}
 			</div>
 		);
 	}
